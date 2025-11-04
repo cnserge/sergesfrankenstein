@@ -7,7 +7,7 @@ https://cnserge.github.io/sergesfrankenstein/
 
 Working on this digital edition taught me how the technical and editorial parts of scholarly editing works together. I started from the TEI-XML encoding of Mary Shelley's Frankenstein pages (folios 21r-25v) and gradually understood how every tag and attribute affects the structure and the way it is displayed. Even though I used AI assistance for the initial setup and debugging, I organized, tested, and modified everything myself in VS Code, making clear decisions about the edition's architecture and presentation.
 
-One of my main decisions was to merge all individual HTML pages into one dynamic viewer.html, controlled by JavaScript URL parameters such as `viewer.html?folio=21r`. This reduced redundant code significantly and made the edition much easier to maintain—any styling or functionality change now applies to all pages automatically. I also experimented extensively with Mirador IIIF integration and XSLT templates until I could properly display the folio images alongside color-coded transcriptions that distinguish Mary Shelley's edits from Percy Shelley's.
+One of my main decisions was to merge all individual HTML pages into one dynamic viewer.html, controlled by JavaScript URL parameters such as `viewer.html?folio=21r`. This reduced redundant code significantly and made the edition much easier to maintain, any styling or functionality change now applies to all pages automatically. I also experimented extensively with Mirador IIIF integration and XSLT templates until I could properly display the folio images alongside color-coded transcriptions that distinguish Mary Shelley's edits from Percy Shelley's.
 
 The hardest part was learning the logic of XSLT and XPath, understanding how to select and transform specific TEI elements (`<del>`, `<add>`, `<hi>`) without breaking the document structure or losing scholarly information. I had to standardize inconsistent XML encoding across multiple files, ensuring that deletion markers used `type="crossedOut"` rather than mixed attribute formats. Through trial and error, I learned to debug XML namespaces, link CSS for proper styling, and create interactive JavaScript functions to filter out the content by author or toggling deleted text visibility.
 
@@ -288,7 +288,7 @@ This project reinforced that digital humanities work requires balancing **techni
 
 ---
 
-**Project Completed:** October 19, 2025  
+**Project Completed:** November 19, 2025  
 **Files Modified:** 10 XML files, 2 XSLT stylesheets, 3 core application files (HTML, CSS, JS)  
 **Total Code Reductions:** ~1500 lines (via file consolidation)  
 **Deployment Ready:** Yes (requires web server for XSLT processing)
