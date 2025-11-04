@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8".>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+    <title>Frankenstein Edition</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Frankenstein</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="viewer.html?folio=21r">21r</a>
+              <a class="dropdown-item" href="viewer.html?folio=21v">21v</a>
+              <a class="dropdown-item" href="viewer.html?folio=22r">22r</a>
+              <a class="dropdown-item" href="viewer.html?folio=22v">22v</a>
+              <a class="dropdown-item" href="viewer.html?folio=23r">23r</a>
+              <a class="dropdown-item" href="viewer.html?folio=23v">23v</a>
+              <a class="dropdown-item" href="viewer.html?folio=24r">24r</a>
+              <a class="dropdown-item" href="viewer.html?folio=24v">24v</a>
+              <a class="dropdown-item" href="viewer.html?folio=25r">25r</a>
+              <a class="dropdown-item" href="viewer.html?folio=25v">25v</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" style="background-image: url('./images/images:gothic-window.jpg'); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #1a1a1a; min-height: 100vh; position: relative; overflow: hidden;">
+      <!-- Yağmur efekti -->
+      <svg class="rain-effect" viewBox="0 0 1200 800" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+        <defs>
+          <style>
+            @keyframes rain-fall {
+              0% {
+                transform: translateY(-100px);
+                opacity: 1;
+              }
+              90% {
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(800px);
+                opacity: 0;
+              }
+            }
+            @keyframes lightning-flash {
+              0%, 10%, 15%, 100% {
+                opacity: 0;
+              }
+              5%, 11% {
+                opacity: 1;
+              }
+            }
+            .raindrop {
+              stroke: rgba(255, 255, 255, 0.5);
+              stroke-width: 1.5;
+              animation: rain-fall 0.8s linear infinite;
+            }
+            .raindrop:nth-child(1) { animation-delay: 0s; }
+            .raindrop:nth-child(2) { animation-delay: 0.1s; }
+            .raindrop:nth-child(3) { animation-delay: 0.2s; }
+            .raindrop:nth-child(4) { animation-delay: 0.3s; }
+            .raindrop:nth-child(5) { animation-delay: 0.4s; }
+            .raindrop:nth-child(6) { animation-delay: 0.5s; }
+            .raindrop:nth-child(7) { animation-delay: 0.6s; }
+            .raindrop:nth-child(8) { animation-delay: 0.7s; }
+            .raindrop:nth-child(9) { animation-delay: 0.8s; }
+            .raindrop:nth-child(10) { animation-delay: 0.9s; }
+            .lightning {
+              animation: lightning-flash 5s ease-in-out infinite;
+            }
+          </style>
+        </defs>
+        <!-- Şimşek efekti -->
+        <rect class="lightning" width="1200" height="800" fill="rgba(255, 255, 200, 0.15)" />
+        <line class="raindrop" x1="50" y1="0" x2="50" y2="30" />
+        <line class="raindrop" x1="150" y1="0" x2="150" y2="30" />
+        <line class="raindrop" x1="250" y1="0" x2="250" y2="30" />
+        <line class="raindrop" x1="350" y1="0" x2="350" y2="30" />
+        <line class="raindrop" x1="450" y1="0" x2="450" y2="30" />
+        <line class="raindrop" x1="550" y1="0" x2="550" y2="30" />
+        <line class="raindrop" x1="650" y1="0" x2="650" y2="30" />
+        <line class="raindrop" x1="750" y1="0" x2="750" y2="30" />
+        <line class="raindrop" x1="850" y1="0" x2="850" y2="30" />
+        <line class="raindrop" x1="950" y1="0" x2="950" y2="30" />
+        <line class="raindrop" x1="1050" y1="0" x2="1050" y2="30" />
+        <line class="raindrop" x1="1150" y1="0" x2="1150" y2="30" />
+        <line class="raindrop" x1="100" y1="0" x2="100" y2="30" />
+        <line class="raindrop" x1="200" y1="0" x2="200" y2="30" />
+        <line class="raindrop" x1="300" y1="0" x2="300" y2="30" />
+        <line class="raindrop" x1="400" y1="0" x2="400" y2="30" />
+        <line class="raindrop" x1="500" y1="0" x2="500" y2="30" />
+        <line class="raindrop" x1="600" y1="0" x2="600" y2="30" />
+        <line class="raindrop" x1="700" y1="0" x2="700" y2="30" />
+        <line class="raindrop" x1="800" y1="0" x2="800" y2="30" />
+        <line class="raindrop" x1="900" y1="0" x2="900" y2="30" />
+        <line class="raindrop" x1="1000" y1="0" x2="1000" y2="30" />
+        <line class="raindrop" x1="1100" y1="0" x2="1100" y2="30" />
+      </svg>
+      
+      <h1>Mary Wollstonecraft Shelley - <i>Frankenstein</i></h1>
+      <p class="creator-text" style="color: white; font-family: 'Cinzel', serif; font-size: 0.9rem; text-align: center; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); margin-top: -1rem; margin-bottom: 1.5rem; letter-spacing: 0.5px;">created by Can Serge Mersin</p>
+      <div class="row" style="position: relative; z-index: 10;">
+        <div class="col-5">   
+          <div class="intro-section">
+            <p class="lead"><i>Welcome to this digital scholarly edition of Mary Shelley's <i>Frankenstein</i>, created as part of the Text as Data II course at the University of Antwerp.</i></p>
+            
+            <div class="credits">
+              <h3>Edition Information</h3>
+              
+              <p><strong>Created by:</strong> Can Serge Mersin</p>
+              <p><strong>Based on:</strong> <a href="http://shelleygodwinarchive.org/" target="_blank">Shelley-Godwin Archive</a></p>
+              <p><strong>Encoding guidelines:</strong> <a href="https://bdmpmanual.uantwerpen.be/" target="_blank">TEI Encoding Manual</a></p>
+              <p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></p>
+              <p class="date">University of Antwerp - October 2025</p>
+            </div>
+            
+            <div class="manuscript-info">
+              <h3>About the Manuscript</h3>
+              <p><i>Draft of Frankenstein, [August or September] – [?December] 1816. | Bodleian MS. Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally bound in Notebook A, one of two now disbound notebooks in which Mary W. Shelley (MWS) drafted the two-volume version of Frankenstein. The draft in c.56 runs from the beginning to the end of Volume I, concluding just as the Creature is about to begin his tale to Victor.</i></p>
+              
+              <p><i>Original text by Mary Shelley (1816). Public domain, under a CC-BY-NC 4.0 licence.</i></p>
+            </div>
+
+            <div class="pages-list">
+              <h3>Pages in This Edition</h3>
+              <ul class="page-links">
+                <li><a href="viewer.html?folio=21r">Folio 21r</a></li>
+                <li><a href="viewer.html?folio=21v">Folio 21v</a></li>
+                <li><a href="viewer.html?folio=22r">Folio 22r</a></li>
+                <li><a href="viewer.html?folio=22v">Folio 22v</a></li>
+                <li><a href="viewer.html?folio=23r">Folio 23r</a></li>
+                <li><a href="viewer.html?folio=23v">Folio 23v</a></li>
+                <li><a href="viewer.html?folio=24r">Folio 24r</a></li>
+                <li><a href="viewer.html?folio=24v">Folio 24v</a></li>
+                <li><a href="viewer.html?folio=25r">Folio 25r</a></li>
+                <li><a href="viewer.html?folio=25v">Folio 25v</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="image-section">
+            <h2 style="font-family: 'Cinzel', serif; font-weight: 900; font-size: 2.2rem; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 255, 255, 0.5); letter-spacing: 1px; text-align: center;">The Authors</h2>
+            <div class="author-grid">
+              <div class="author-card">
+                <img src="images/mary-shelley-portrait.png" alt="Mary Wollstonecraft Shelley" class="author-img">
+                <h4>Mary Wollstonecraft Shelley</h4>
+                <p class="author-dates">(1797-1851)</p>
+                <p class="author-bio">English novelist who wrote <i>Frankenstein; or, The Modern Prometheus</i> at the age of 18. The daughter of philosopher William Godwin and feminist Mary Wollstonecraft, she created one of the most enduring works of Gothic literature.</p>
+              </div>
+              
+              <div class="author-card">
+                <img src="images/percy-shelley.png" alt="Percy Bysshe Shelley" class="author-img">
+                <h4>Percy Bysshe Shelley</h4>
+                <p class="author-dates">(1792-1822)</p>
+                <p class="author-bio">English Romantic poet and Mary's husband, who provided editorial assistance on <i>Frankenstein</i>. His contributions are visible throughout the manuscript in distinctive blue ink.</p>
+              </div>
+            </div>
+            
+            <div class="manuscript-image">
+              <h3>View the Manuscript</h3>
+              <p>Explore the digitized pages from the Bodleian Library's collection, showing both hands at work.</p>
+              <a href="viewer.html?folio=21r" class="btn btn-lg btn-primary">Start Reading →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

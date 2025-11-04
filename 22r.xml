@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" 
+  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" 
+  type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frankenstein</title>
+        <author corresp="#MWS">Mary Wollstonecraft Shelley</author>
+        <editor corresp="#PBS">Percy Bysshe Shelley</editor>
+      </titleStmt>
+      <publicationStmt>
+        <date>8 December 2023</date>
+        <availability>
+          <licence target="https://iiif.bodleian.ox.ac.uk/iiif/mirador/53fd0f29-d482-46e1-aa9d-37829b49987d">
+            <p>Original text by Mary Shelley (1816). Public domain, under a CC-BY-NC 4.0 licence.</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Draft of Frankenstein, [August or September] – [?December] 1816. | Bodleian MS. Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally bound in Notebook A, one of two now disbound notebooks in which Mary W. Shelley (MWS) drafted the two-volume version of Frankenstein. The draft in c.56 runs from the beginning to the end of Volume I, concluding just as the Creature is about to begin his tale to Victor.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="page" n="22r" rend="recto">
+        <pb facs="#p22r"/>
+        <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark>
+
+        <p>
+          to change and I thought that I held<lb/>
+          the corpse of my dead mother in my arms
+          <del type="overwritten" hand="#MWS">,</del> :<lb/>
+          <del type="overwritten" hand="#MWS">a</del> A shroud envolepped her form &amp; I saw<lb/>
+          the grave worms crawling in the folds of the flannel;<lb/>
+          I started <add place="supralinear" hand="#MWS">from my sleep</add> with horror, a<lb/>
+
+          <del type="crossedOut" hand="#MWS">when I saw</del>
+          cold dew covered my forehead,<lb/>
+          my teeth <del type="crossedOut" hand="#MWS">ah</del> chattered and every limb<lb/>
+
+          <del type="crossedOut" hand="#MWS">was</del>
+          <add place="supralinear" hand="#PBS">became</add>
+          convulsed, when, by the dim and yellow light of the moon<lb/>
+          as it forced its way through the window shutters, I<lb/>
+          beheld the wretch — the miserable monster whom I had created; he hel<del type="overwritten" hand="#MWS"/>d<lb/>
+
+          up the curtain, — and his eyes; if eyes<lb/>
+          they may be called, were fixed on me — His<lb/>
+
+          <add place="marginleft" hand="#PBS">inarticulate</add>
+          jaws opened and he muttered
+          <del type="crossedOut" hand="#PBS" rend="supralinear">in</del> some
+          <del type="crossedOut" hand="#MWS">words</del><lb/>
+          <add place="marginleft" hand="#PBS">sounds</add>
+          while a grin wrinkled his cheeks. He<lb/>
+
+          he might have spoken but I did not hear —<lb/>
+          one hand was stretched out to detain me but I escaped and
+          <del type="crossedOut" hand="#MWS">ran</del><lb/>
+
+          rushed down stair<del type="overwritten" hand="#MWS">s</del> s
+          <add place="supralinear" hand="#PBS">the</add>
+          <add place="supralinear" hand="#PBS">ease</add>
+          I took refuge in a court-yard belonging to the house<lb/>
+          which I inhabited; where I remained<lb/>
+
+          <add place="marginleft" hand="#PBS">during</add>
+          the rest of the night walking up and down in the greatest agitation;<lb/>
+          listening attentively, catching and fearing each sound as if it were to announce the<lb/>
+          arrival of the demoniacal corpse to which I had so miserabl
+          <del type="overwritten" hand="#PBS">e</del><add place="inline" hand="#PBS">y</add> given life.<lb/>
+
+          Oh! no mortal could support the horror of that countenance. A
+          <add place="supralinear" hand="#MWS">again</add><lb/>
+          mummy endued with <del type="crossedOut" hand="#MWS">life</del>
+          <add place="supralinear" hand="#PBS">animation</add> could not be<lb/>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

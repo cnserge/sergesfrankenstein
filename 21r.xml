@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+  type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Frankenstein</title>
+        <author corresp="#MWS">Mary Wollstonecraft Shelley</author>
+        <editor corresp="#PBS">Percy Bysshe Shelley</editor>
+      </titleStmt>
+      <publicationStmt>
+        <date>8 December 2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Draft of Frankenstein, [August or September] – [?December] 1816. | Bodleian MS. Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally bound in Notebook A, one of two now disbound notebooks in which Mary W. Shelley (MWS) drafted the two-volume version of Frankenstein. The draft in c.56 runs from the beginning to the end of Volume I, concluding just as the Creature is about to begin his tale to Victor.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="page" n="21r" rend="recto">
+        <pb facs="#p21r"/>
+
+        <head>
+          Chapter 7<hi rend="sup"><hi rend="u">th</hi></hi>
+          <metamark function="pagenumber"><num><hi rend="circled">75</hi></num></metamark>
+        </head>
+
+        <!-- Margin notes -->
+        <add place="marginleft" hand="#PBS">beautiful</add>
+        <add place="marginleft" hand="#MWS">handsome</add>
+        <add place="marginleft" hand="#MWS">yellow</add>
+
+        <!-- Paragraph 1 -->
+        <p>
+          It was on a dreary night of November<lb/>
+          that I beheld
+          <del hand="#PBS" type="crossedOut">the frame on whic</del>
+          my man comple
+          <del hand="#MWS" type="overwritten">at</del><add hand="#MWS" place="inline">te</add>ed<del hand="#MWS" type="overwritten">.</del><add hand="#MWS" place="inline">,</add><lb/>
+          with an anxiety that almost amount<lb/>
+          ed to agony I collected instruments of life<lb/>
+          around me <del hand="#MWS" type="crossedOut">and endeavour to</del>
+          <add hand="#MWS" place="supralinear">that I might</add>
+          <del hand="#MWS" type="overwritten">e</del><add hand="#MWS" place="inline">i</add>nfuse a<lb/>
+          spark of being into the lifeless thin
+          <del hand="#MWS" type="overwritten">k</del><add hand="#MWS" place="inline">g</add><lb/>
+          that lay at my feet. It was already<lb/>
+          one in the morning, the rain pattered<lb/>
+          dismally against the window panes, &amp;<lb/>
+          my candle was nearly burnt out, when<lb/>
+          by the glimmer of the half extinguish<lb/>
+          ed light I saw the dull yellow eye of<lb/>
+          the creature open—It breathed hard,<lb/>
+          and a convulsive motion agitated<lb/>
+          its limbs.
+        </p>
+
+        <!-- Paragraph 2 -->
+        <p>
+          <del hand="#MWS" type="crossedOut">But How</del>  can I describe my<lb/>
+          emotion at this catastrophe; or how deli<lb/>
+          neate the wretch whom with such<lb/>
+          infinite pains and care I had endeavoured<lb/>
+          to form. His limbs were in proportion<lb/>
+          and I had selected his features as<lb/>
+          <del hand="#MWS" type="crossedOut">handsome</del>
+          <add hand="#PBS" place="supralinear">Beautiful</add>; Great God! His<lb/>
+          <del hand="#MWS" type="crossedOut">dun</del>
+          skin scarcely covered the work of<lb/>
+          muscles and arteries beneath; his hair was<lb/>
+          <add hand="#PBS" place="marginleft">of a lustrous black &amp;</add> flowing and his teeth of a pearly white<lb/>
+          ness but these luxurianc<add hand="#MWS" place="inline">i</add>es only
+          <del hand="#MWS" type="crossedOut">fomed</del><add place="inline">formed</add><lb/>
+          formed a more horrid contrast with<lb/>
+          his watry eyes that seemed almost of<lb/>
+          the same colour as the dun white<lb/>
+          sockets in which they were set,<lb/>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>
