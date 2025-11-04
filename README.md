@@ -1,3 +1,8 @@
+# Check the website
+
+https://cnserge.github.io/sergesfrankenstein/
+
+
 # Reflection Report
 
 Working on this digital edition taught me how the technical and editorial parts of scholarly editing works together. I started from the TEI-XML encoding of Mary Shelley's Frankenstein pages (folios 21r-25v) and gradually understood how every tag and attribute affects the structure and the way it is displayed. Even though I used AI assistance for the initial setup and debugging, I organized, tested, and modified everything myself in VS Code, making clear decisions about the edition's architecture and presentation.
